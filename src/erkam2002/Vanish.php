@@ -20,7 +20,7 @@ class Vanish extends PluginBase implements Listener {
     
     public $plugin;
     
-    public $esssentialspe;
+    public $essentialspe;
 
     public $vanish = array();
 
