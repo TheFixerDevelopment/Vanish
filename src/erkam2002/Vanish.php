@@ -17,6 +17,8 @@ class Vanish extends PluginBase implements Listener {
     public $prefix = C::BLUE."[§aSuper§2Vanish§b]§r".C::DARK_GRAY." >".C::WHITE." ";
 
     public $config;
+    
+    public $plugin;
 
     public $vanish = array();
 
