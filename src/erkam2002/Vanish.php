@@ -19,11 +19,18 @@ class Vanish extends PluginBase implements Listener {
     public $config;
     
     public $plugin;
+    
+    public $esssentialspe;
 
     public $vanish = array();
 
     public function onEnable(){
         $this->getLogger()->info("Activated!");
+        }
+        $this->essentialspe = $this->getServer()->getPluginManager()->getPlugin("EssentialsPE");
+        if (!$this->essentialspe) {
+            $this->getLogger()->info("EssentialsPE is not installed. Disabling EssentialsPE Support..");
+    	}
         $this->saveResource("config.yml");
         @mkdir($this->getDataFolder());
         $this->config = new Config($this->getDataFolder()."config.yml", Config::YAML, [
